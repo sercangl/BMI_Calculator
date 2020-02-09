@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'input-page.dart';
+
+
 
 void main() => runApp(MyApp());
 
@@ -7,27 +10,16 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: InputPage());
-  }
-}
-
-class InputPage extends StatefulWidget {
-  InputPage({Key key}) : super(key: key);
-
-  @override
-  _InputPageState createState() => _InputPageState();
-}
-
-class _InputPageState extends State<InputPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Bmi Calculator")),
-      body: Center(child: Text("Body Text")),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: null,
-      ),
+    return MaterialApp(
+      
+      home: InputPage(),
+      theme: ThemeData.dark(),
+      /* theme: ThemeData(
+          primaryColor: Colors.yellow,
+          scaffoldBackgroundColor: Colors.red,
+          accentColor: Colors.purple,
+          textTheme: TextTheme(body1: TextStyle(color: Colors.white))),*/
     );
   }
 }
+
