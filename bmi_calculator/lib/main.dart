@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'input-page.dart';
 
-
-
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -11,9 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      
       home: InputPage(),
-      theme: ThemeData.dark(),
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Color(0xFF0A0E21),
+        scaffoldBackgroundColor: Color(0xFF0A0E21),
+      ),
       /* theme: ThemeData(
           primaryColor: Colors.yellow,
           scaffoldBackgroundColor: Colors.red,
@@ -22,4 +22,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
