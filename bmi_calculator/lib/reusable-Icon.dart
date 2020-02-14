@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'constants.dart';
 
-const labelTextStyle= TextStyle(fontSize: 18.0, color: Color(0xFF8DbE98));
 
+
+
+ 
 class ReusableIconWidget extends StatelessWidget {
   ReusableIconWidget({@required this.cardIcon, this.cardText});
   final IconData cardIcon;
